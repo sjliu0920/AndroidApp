@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/sales_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:id="@+id/sales_name"
+        android:text="This is one cloth"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sales_image"
+        android:layout_marginLeft="10dip" />
+
+    <TextView
+        android:id="@+id/sales_charge"
+        android:text="$12.99"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sales_image"
+        android:layout_below="@id/sales_name"
+        android:layout_marginLeft="10dip" />
+
+    <TextView
+        android:id="@+id/sales_judge"
+        android:text="*****"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/sales_image"
+        android:layout_below="@id/sales_charge"
+        android:layout_marginLeft="10dip" />
+
+    <Button
+        android:id="@+id/check_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="真实性核查"
+        android:textSize="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/sales_charge"
+        android:layout_marginRight="50dip" />
+        />
+</RelativeLayout>
