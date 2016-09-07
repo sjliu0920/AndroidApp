@@ -24,7 +24,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
- * Created by double on 8/18/16.
+ * Created by double on 9/8/16.
  */
 public class ChildSaleList extends Activity implements AdapterView.OnItemClickListener, Callback{
     private List<SaleItem> saleList = new ArrayList<SaleItem>();
@@ -137,7 +137,7 @@ public class ChildSaleList extends Activity implements AdapterView.OnItemClickLi
 
         SalesAdapter adapter = new SalesAdapter(ChildSaleList.this,
                 R.layout.sale_item, saleList, this);
-        ListView listView = (ListView) findViewById(R.id.list_view);
+        ListView listView = (ListView) findViewById(R.id.item_list_view);
         listView.setAdapter(adapter);
     }
 

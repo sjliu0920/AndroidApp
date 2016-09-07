@@ -73,7 +73,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 new Thread(new Runnable() {
                     public void run() {
                         Message message = new Message();
-                        message.what = checkLogin();
+                        // message.what = checkLogin();
+                        message.what = 0; //checkLogin();
                         handler.sendMessage(message); // 将Message对象发送出去
                     }
                 }).start();
